@@ -1,4 +1,4 @@
-import heroClinic from "@/assets/hero-clinic.jpg";
+import heroClinic from "@/assets/feminos.jpg";
 import {
   Phone,
   Mail,
