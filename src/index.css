@@ -41,8 +41,8 @@ All colors MUST be HSL.
     --radius: 0.5rem;
 
     /* Custom tokens */
-    --topbar: 220 10% 34%;
-    --topbar-foreground: 0 0% 96%;
+    --topbar: 220 10% 94%;
+    --topbar-foreground: 220 15% 15%;
     --hero-overlay: 207 55% 15%;
     --blue-light: 207 60% 92%;
     --blue-mid: 207 70% 85%;

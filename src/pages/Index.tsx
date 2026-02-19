@@ -74,7 +74,7 @@ const Index = () => {
               <button
                 key={item.label}
                 onClick={() => scrollTo(item.id)}
-                className="nav-link text-sm px-2 py-1"
+                className="nav-link text-[15px] font-normal px-2 py-1"
               >
                 {item.label}
               </button>
@@ -91,36 +91,43 @@ const Index = () => {
           alt="Gynekologická ambulance Feminos"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
-        {/* subtle dark gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[hsl(215_45%_12%/0.72)] via-[hsl(215_45%_12%/0.45)] to-transparent" />
-        <div className="relative z-10 h-full flex items-center">
+        {/* gradient overlay – left dark fade */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[hsl(215_45%_8%/0.65)] via-[hsl(215_45%_8%/0.25)] to-transparent" />
+        <div className="relative z-10 h-full flex flex-col justify-end pb-14">
           <div className="max-w-6xl mx-auto px-6 w-full">
-            {/* Frosted card style */}
-            <div className="max-w-lg bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl px-8 py-9 shadow-xl">
-              <p className="text-[hsl(var(--blue-mid))] text-xs font-semibold tracking-[0.2em] uppercase mb-4">
-                Gynekologická ordinace · Praha
-              </p>
-              <h1
-                className="text-white text-3xl md:text-4xl font-bold leading-snug mb-4"
-                style={{ fontFamily: "var(--font-display)" }}
-              >
-                Ambulantní gynekologická péče
-              </h1>
-              <div className="h-px bg-white/25 mb-4" />
-              <p className="text-white/90 text-sm md:text-base leading-relaxed mb-7">
-                Komplexní léčebně-preventivní péče v oboru gynekologie
-                a porodnictví včetně ultrazvukové diagnostiky.
-              </p>
-              <div className="flex flex-wrap gap-3">
+            {/* Bottom-anchored modern layout */}
+            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+              {/* Left: headline block */}
+              <div className="max-w-lg">
+                <div className="flex items-center gap-2 mb-5">
+                  <span className="h-px w-10 bg-[hsl(var(--blue-mid))]" />
+                  <p className="text-[hsl(var(--blue-mid))] text-xs font-medium tracking-[0.25em] uppercase">
+                    Gynekologická ordinace · Praha
+                  </p>
+                </div>
+                <h1
+                  className="text-white text-4xl md:text-5xl font-semibold leading-tight mb-4"
+                  style={{ fontFamily: "var(--font-display)" }}
+                >
+                  Ambulantní<br />gynekologická péče
+                </h1>
+                <p className="text-white/75 text-sm md:text-[15px] leading-relaxed max-w-md">
+                  Komplexní léčebně-preventivní péče v oboru gynekologie
+                  a porodnictví včetně ultrazvukové diagnostiky.
+                </p>
+              </div>
+
+              {/* Right: CTA card */}
+              <div className="flex flex-col gap-3 shrink-0 md:mb-1">
                 <button
                   onClick={() => scrollTo("online")}
-                  className="btn-primary bg-white text-[hsl(var(--primary))] hover:bg-[hsl(var(--secondary))]"
+                  className="btn-primary text-sm px-8"
                 >
                   Objednat se
                 </button>
                 <button
                   onClick={() => scrollTo("sluzby")}
-                  className="btn-outline border-white/60 text-white hover:bg-white/15"
+                  className="btn-outline border-white/50 text-white hover:bg-white/10 text-sm px-8"
                 >
                   Naše služby
                 </button>
