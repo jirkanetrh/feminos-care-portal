@@ -19,7 +19,7 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 215 35% 18%;
 
-    --primary: 207 72% 40%;
+    --primary: 207 80% 50%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 207 55% 94%;
@@ -41,12 +41,13 @@ All colors MUST be HSL.
     --radius: 0.5rem;
 
     /* Custom tokens */
-    --topbar: 207 72% 38%;
-    --topbar-foreground: 0 0% 100%;
-    --hero-overlay: 207 60% 20%;
+    --topbar: 220 10% 34%;
+    --topbar-foreground: 0 0% 96%;
+    --hero-overlay: 207 55% 15%;
     --blue-light: 207 60% 92%;
-    --blue-mid: 207 65% 78%;
+    --blue-mid: 207 70% 85%;
     --blue-deep: 207 72% 32%;
+    --primary: 207 80% 50%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
