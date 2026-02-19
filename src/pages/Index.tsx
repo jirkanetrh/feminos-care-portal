@@ -21,7 +21,7 @@ const Index = () => {
     <div className="min-h-screen bg-background font-body">
       {/* TOP BAR */}
       <div className="bg-[hsl(var(--topbar))] text-[hsl(var(--topbar-foreground))]">
-        <div className="max-w-6xl mx-auto px-4 py-2 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs">
+        <div className="max-w-6xl mx-auto px-4 py-2.5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs">
           <span className="font-semibold tracking-wide">MUDr. Jana Nováková</span>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <a
@@ -48,14 +48,14 @@ const Index = () => {
 
       {/* LOGO + NAVIGATION */}
       <header className="bg-white border-b border-[hsl(var(--border))] sticky top-0 z-50 shadow-sm">
-        <div className="max-w-6xl mx-auto px-4 py-3 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div className="max-w-6xl mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <div className="w-9 h-9 rounded-full bg-[hsl(var(--secondary))] flex items-center justify-center">
-              <Heart className="w-5 h-5 text-primary" strokeWidth={1.5} />
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 rounded-full bg-[hsl(var(--secondary))] flex items-center justify-center shadow-sm">
+              <Heart className="w-6 h-6 text-primary" strokeWidth={1.5} />
             </div>
             <span
-              className="text-2xl font-bold tracking-wide text-primary"
+              className="text-3xl font-bold tracking-wide text-primary"
               style={{ fontFamily: "var(--font-display)" }}
             >
               Feminos
@@ -63,7 +63,7 @@ const Index = () => {
           </div>
 
           {/* Nav */}
-          <nav className="flex items-center gap-1 sm:gap-5 flex-wrap justify-center">
+          <nav className="flex items-center gap-1 sm:gap-6 flex-wrap justify-center">
             {[
               { label: "Naše služby", id: "sluzby" },
               { label: "Náš tým", id: "tym" },
@@ -74,7 +74,7 @@ const Index = () => {
               <button
                 key={item.label}
                 onClick={() => scrollTo(item.id)}
-                className="nav-link text-xs sm:text-sm px-2 py-1"
+                className="nav-link text-sm px-2 py-1"
               >
                 {item.label}
               </button>
@@ -83,28 +83,32 @@ const Index = () => {
         </div>
       </header>
 
+
       {/* HERO */}
-      <section className="relative h-[520px] md:h-[600px] overflow-hidden">
+      <section className="relative h-[540px] md:h-[620px] overflow-hidden">
         <img
           src={heroClinic}
           alt="Gynekologická ambulance Feminos"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-[hsl(var(--hero-overlay)/0.55)]" />
+        {/* subtle dark gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[hsl(215_45%_12%/0.72)] via-[hsl(215_45%_12%/0.45)] to-transparent" />
         <div className="relative z-10 h-full flex items-center">
           <div className="max-w-6xl mx-auto px-6 w-full">
-            <div className="max-w-xl">
-              <p className="text-[hsl(var(--blue-mid))] text-sm font-medium tracking-widest uppercase mb-3">
-                Gynekologická ordinace Praha
+            {/* Frosted card style */}
+            <div className="max-w-lg bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl px-8 py-9 shadow-xl">
+              <p className="text-[hsl(var(--blue-mid))] text-xs font-semibold tracking-[0.2em] uppercase mb-4">
+                Gynekologická ordinace · Praha
               </p>
               <h1
-                className="text-white text-4xl md:text-5xl font-bold leading-tight mb-5"
+                className="text-white text-3xl md:text-4xl font-bold leading-snug mb-4"
                 style={{ fontFamily: "var(--font-display)" }}
               >
                 Ambulantní gynekologická péče
               </h1>
-              <p className="text-white/85 text-base md:text-lg leading-relaxed mb-8">
-                Komplexní léčebně-preventivní péči v oboru gynekologie
+              <div className="h-px bg-white/25 mb-4" />
+              <p className="text-white/90 text-sm md:text-base leading-relaxed mb-7">
+                Komplexní léčebně-preventivní péče v oboru gynekologie
                 a porodnictví včetně ultrazvukové diagnostiky.
               </p>
               <div className="flex flex-wrap gap-3">
@@ -116,7 +120,7 @@ const Index = () => {
                 </button>
                 <button
                   onClick={() => scrollTo("sluzby")}
-                  className="btn-outline border-white text-white hover:bg-white/10"
+                  className="btn-outline border-white/60 text-white hover:bg-white/15"
                 >
                   Naše služby
                 </button>
@@ -127,12 +131,13 @@ const Index = () => {
         {/* scroll indicator */}
         <button
           onClick={() => scrollTo("online-sluzby")}
-          className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/70 animate-bounce"
+          className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/60 animate-bounce"
           aria-label="Scrollovat dolů"
         >
           <ChevronDown className="w-7 h-7" />
         </button>
       </section>
+
 
       {/* ONLINE SERVICES */}
       <section id="online-sluzby" className="py-16 md:py-20 bg-[hsl(var(--blue-light))]">
