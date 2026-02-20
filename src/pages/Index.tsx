@@ -164,16 +164,16 @@ const Index = () => {
           </div>
 
           {/* Info rows */}
-          <div className="flex flex-col sm:flex-row justify-center gap-8 mb-12 max-w-3xl mx-auto">
+          <div className="flex flex-col gap-4 mb-12 max-w-3xl mx-auto">
             <div className="flex items-center gap-3">
               <User className="w-5 h-5 text-primary shrink-0" />
-              <p className="text-sm text-muted-foreground">
+              <p className="text-muted-foreground text-base">
                 Po přihlášení můžete využívat <strong className="text-foreground">všechny on-line služby</strong>. Podmínkou je mít u nás registrovaný kontaktní e-mail.
               </p>
             </div>
             <div className="flex items-center gap-3">
               <Clock className="w-5 h-5 text-primary shrink-0" />
-              <p className="text-sm text-muted-foreground">
+              <p className="text-muted-foreground text-base">
                 On-line lze využít pouze funkci <strong className="text-foreground">objednávání</strong>.
               </p>
             </div>
