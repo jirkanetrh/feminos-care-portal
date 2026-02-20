@@ -156,45 +156,25 @@ const Index = () => {
             <h2 className="section-title mb-4">
               Využívejte naše on-line služby
             </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto text-base">
+            <p className="text-muted-foreground max-w-3xl mx-auto text-base">
               Pro rychlejší a bezpečnější komunikaci s ordinací využívejte náš
               klientský portál. Nahrazuje běžný e-mail i telefon a vše podstatné
               v něm najdete na jednom místě, a to i mimo ordinační hodiny.
             </p>
           </div>
 
-          {/* Access cards */}
-          <div className="grid md:grid-cols-2 gap-6 mb-12 max-w-3xl mx-auto">
-            <div className="bg-white rounded-2xl p-7 shadow-sm border border-[hsl(var(--border))]">
-              <div className="w-11 h-11 rounded-full bg-primary flex items-center justify-center mb-4">
-                <User className="w-5 h-5 text-primary-foreground" />
-              </div>
-              <h3
-                className="text-xl font-semibold mb-2 text-foreground"
-                style={{ fontFamily: "var(--font-display)" }}
-              >
-                Plný přístup
-              </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                Po přihlášení můžete využívat{" "}
-                <strong className="text-foreground">všechny on-line služby</strong>.
-                Podmínkou je mít u nás registrovaný kontaktní e-mail.
+          {/* Info rows */}
+          <div className="flex flex-col sm:flex-row justify-center gap-8 mb-12 max-w-3xl mx-auto">
+            <div className="flex items-center gap-3">
+              <User className="w-5 h-5 text-primary shrink-0" />
+              <p className="text-sm text-muted-foreground">
+                Po přihlášení můžete využívat <strong className="text-foreground">všechny on-line služby</strong>. Podmínkou je mít u nás registrovaný kontaktní e-mail.
               </p>
             </div>
-
-            <div className="bg-white rounded-2xl p-7 shadow-sm border border-[hsl(var(--border))]">
-              <div className="w-11 h-11 rounded-full bg-[hsl(var(--secondary))] flex items-center justify-center mb-4">
-                <Clock className="w-5 h-5 text-primary" />
-              </div>
-              <h3
-                className="text-xl font-semibold mb-2 text-foreground"
-                style={{ fontFamily: "var(--font-display)" }}
-              >
-                Bez přihlášení
-              </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                On-line lze využít pouze funkci{" "}
-                <strong className="text-foreground">objednávání</strong>.
+            <div className="flex items-center gap-3">
+              <Clock className="w-5 h-5 text-primary shrink-0" />
+              <p className="text-sm text-muted-foreground">
+                On-line lze využít pouze funkci <strong className="text-foreground">objednávání</strong>.
               </p>
             </div>
           </div>
@@ -205,11 +185,11 @@ const Index = () => {
               <Calendar className="w-4 h-4" />
               Objednat na vyšetření
             </button>
-            <button className="btn-outline flex items-center gap-2 w-full sm:w-auto justify-center">
+            <button className="btn-primary flex items-center gap-2 w-full sm:w-auto justify-center">
               <FileText className="w-4 h-4" />
               Vystavit recept
             </button>
-            <button className="btn-outline flex items-center gap-2 w-full sm:w-auto justify-center">
+            <button className="btn-primary flex items-center gap-2 w-full sm:w-auto justify-center">
               <MessageCircle className="w-4 h-4" />
               Jiné
             </button>
