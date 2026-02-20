@@ -345,7 +345,7 @@ const Index = () => {
                     <MapPin className="w-4 h-4 text-primary mt-0.5 shrink-0" />
                     <div>
                       <p className="font-medium text-foreground">Adresa</p>
-                      <p className="text-muted-foreground">Náměstí Míru 12, 120 00 Praha 2</p>
+                      <p className="text-muted-foreground">Hroznětínská 350, Ostrov</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -353,10 +353,10 @@ const Index = () => {
                     <div>
                       <p className="font-medium text-foreground">Telefon</p>
                       <a
-                        href="tel:+420123456789"
+                        href="tel:+420353821512"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        +420 123 456 789
+                        +420 353 821 512
                       </a>
                     </div>
                   </div>
@@ -365,10 +365,10 @@ const Index = () => {
                     <div>
                       <p className="font-medium text-foreground">E-mail</p>
                       <a
-                        href="mailto:ordinace@feminos.cz"
+                        href="mailto:feminos@email.cz"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        ordinace@feminos.cz
+                        feminos@email.cz
                       </a>
                     </div>
                   </div>
@@ -384,26 +384,31 @@ const Index = () => {
                 </h3>
                 <div className="space-y-1.5 text-sm">
                   {[
-                    { day: "Pondělí", time: "8:00 – 12:00 | 13:00 – 17:00" },
-                    { day: "Úterý", time: "8:00 – 12:00" },
-                    { day: "Středa", time: "8:00 – 12:00 | 13:00 – 16:00" },
-                    { day: "Čtvrtek", time: "8:00 – 12:00" },
-                    { day: "Pátek", time: "8:00 – 12:00" },
+                    { day: "Pondělí", time: "7:00 – 16:00" },
+                    { day: "Úterý", time: "7:00 – 14:00" },
+                    { day: "Středa", time: "7:00 – 12:00", note: "pouze objednané pacientky" },
+                    { day: "Čtvrtek", time: "11:00 – 18:00", note: "pouze objednané pacientky" },
+                    { day: "Pátek", time: "7:00 – 13:00" },
                   ].map((h) => (
-                    <div key={h.day} className="flex justify-between">
-                      <span className="font-medium text-foreground">{h.day}</span>
-                      <span className="text-muted-foreground">{h.time}</span>
+                    <div key={h.day} className="flex items-baseline gap-3">
+                      <span className="font-medium text-foreground w-20">{h.day}</span>
+                      <span className="text-muted-foreground">
+                        {h.time}
+                        {(h as any).note && (
+                          <span className="text-xs text-muted-foreground/70 ml-2">({(h as any).note})</span>
+                        )}
+                      </span>
                     </div>
                   ))}
                 </div>
               </div>
             </div>
 
-            {/* Map placeholder */}
+            {/* Map */}
             <div className="rounded-2xl overflow-hidden border border-[hsl(var(--border))] bg-[hsl(var(--blue-light))] h-72 md:h-auto flex items-center justify-center">
               <iframe
                 title="Mapa Feminos"
-                src="https://maps.google.com/maps?q=N%C3%A1m%C4%9Bst%C3%AD+M%C3%ADru+12+Praha+2&output=embed"
+                src="https://maps.google.com/maps?q=Hrozn%C4%9Bt%C3%ADnsk%C3%A1+350+Ostrov&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0, minHeight: "280px" }}
