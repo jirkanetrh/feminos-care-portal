@@ -22,25 +22,25 @@ const Index = () => {
       {/* TOP BAR */}
       <div className="bg-[hsl(var(--topbar))] text-[hsl(var(--topbar-foreground))]">
         <div className="max-w-6xl mx-auto px-4 py-2.5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs">
-          <span className="font-semibold tracking-wide">MUDr. Jana Nováková</span>
+          <span className="font-semibold tracking-wide">MUDr. Filip Berger</span>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <a
-              href="tel:+420123456789"
+              href="tel:+420353821512"
               className="flex items-center gap-1.5 hover:opacity-80 transition-opacity"
             >
               <Phone className="w-3 h-3" />
-              +420 123 456 789
+              +420 353 821 512
             </a>
             <a
-              href="mailto:ordinace@feminos.cz"
+              href="mailto:feminos@email.cz"
               className="flex items-center gap-1.5 hover:opacity-80 transition-opacity"
             >
               <Mail className="w-3 h-3" />
-              ordinace@feminos.cz
+              feminos@email.cz
             </a>
             <span className="flex items-center gap-1.5">
               <MapPin className="w-3 h-3" />
-              Náměstí Míru 12, Praha 2
+              Hroznětínská 350, Ostrov
             </span>
           </div>
         </div>
