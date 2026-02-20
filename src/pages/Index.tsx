@@ -102,7 +102,7 @@ const Index = () => {
                 <div className="flex items-center gap-2 mb-5">
                   <span className="h-px w-10 bg-[hsl(var(--blue-mid))]" />
                   <p className="text-[hsl(var(--blue-mid))] text-xs font-medium tracking-[0.25em] uppercase">
-                    Gynekologická ordinace · Praha
+                    Gynekologická ordinace · Ostrov
                   </p>
                 </div>
                 <h1
@@ -129,7 +129,7 @@ const Index = () => {
                   onClick={() => scrollTo("sluzby")}
                   className="btn-outline border-white/50 text-white hover:bg-white/10 text-sm px-8"
                 >
-                  Naše služby
+                  Chci recept
                 </button>
               </div>
             </div>
