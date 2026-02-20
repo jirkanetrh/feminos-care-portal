@@ -266,22 +266,15 @@ const Index = () => {
             </p>
             <h2 className="section-title">Náš tým</h2>
           </div>
-          <div className="flex flex-col sm:flex-row gap-8 justify-center max-w-2xl mx-auto">
+          <div className="flex flex-col sm:flex-row gap-8 justify-center max-w-3xl mx-auto">
             {[
-              {
-                name: "MUDr. Jana Nováková",
-                role: "Gynekolog a porodník",
-                detail: "Specializace v ultrazvukové diagnostice, 15 let praxe.",
-              },
-              {
-                name: "Petra Horáčková",
-                role: "Zdravotní sestra",
-                detail: "Koordinace pacientů, odběry, administrativní podpora.",
-              },
+              { name: "MUDr. Filip Berger", role: "Gynekolog a porodník" },
+              { name: "MUDr. Barbora Končická", role: "Gynekolog a porodník" },
+              { name: "Ivana Sakařová", role: "Zdravotní sestra" },
             ].map((p) => (
               <div
                 key={p.name}
-                className="flex-1 bg-white rounded-2xl p-8 shadow-sm border border-[hsl(var(--border))] text-center"
+                className="flex-1 bg-white rounded-md p-8 shadow-sm border border-[hsl(var(--border))] text-center"
               >
                 <div className="w-20 h-20 rounded-full bg-[hsl(var(--secondary))] flex items-center justify-center mx-auto mb-4">
                   <User className="w-9 h-9 text-primary" strokeWidth={1.2} />
@@ -292,8 +285,7 @@ const Index = () => {
                 >
                   {p.name}
                 </h3>
-                <p className="text-primary text-sm font-medium mb-2">{p.role}</p>
-                <p className="text-muted-foreground text-sm">{p.detail}</p>
+                <p className="text-primary text-sm font-medium">{p.role}</p>
               </div>
             ))}
           </div>
