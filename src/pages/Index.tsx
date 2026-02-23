@@ -10,6 +10,12 @@ import {
   Clock,
   User,
   ChevronDown,
+  Stethoscope,
+  Baby,
+  ScanLine,
+  Pill,
+  Dna,
+  ClipboardList,
 } from "lucide-react";
 
 const Index = () => {
@@ -214,32 +220,32 @@ const Index = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                icon: "🩺",
+                icon: <Stethoscope className="w-7 h-7 text-foreground/70" strokeWidth={1.5} />,
                 title: "Preventivní gynekologie",
                 desc: "Pravidelné preventivní prohlídky, onkologická cytologie, kolposkopie.",
               },
               {
-                icon: "🤰",
+                icon: <Baby className="w-7 h-7 text-foreground/70" strokeWidth={1.5} />,
                 title: "Porodnictví",
                 desc: "Prenatální péče, sledování těhotenství, poradenství.",
               },
               {
-                icon: "🔬",
+                icon: <ScanLine className="w-7 h-7 text-foreground/70" strokeWidth={1.5} />,
                 title: "Ultrazvuková diagnostika",
                 desc: "Moderní ultrazvukové vyšetření v gynekologii i porodnictví.",
               },
               {
-                icon: "💊",
+                icon: <Pill className="w-7 h-7 text-foreground/70" strokeWidth={1.5} />,
                 title: "Antikoncepce",
                 desc: "Poradenství a předpis všech druhů antikoncepce.",
               },
               {
-                icon: "🧬",
+                icon: <Dna className="w-7 h-7 text-foreground/70" strokeWidth={1.5} />,
                 title: "Hormonální léčba",
                 desc: "Terapie menopauzy a hormonálních poruch.",
               },
               {
-                icon: "📋",
+                icon: <ClipboardList className="w-7 h-7 text-foreground/70" strokeWidth={1.5} />,
                 title: "Online recepty",
                 desc: "Vystavení receptů bez nutnosti návštěvy ordinace.",
               },
@@ -248,7 +254,7 @@ const Index = () => {
                 key={s.title}
                 className="p-6 rounded-2xl border border-[hsl(var(--border))] hover:border-[hsl(var(--accent))] hover:shadow-md transition-all duration-200 bg-white group"
               >
-                <span className="text-3xl mb-4 block">{s.icon}</span>
+                <div className="mb-4">{s.icon}</div>
                 <h3
                   className="text-lg font-semibold mb-2 group-hover:text-primary transition-colors"
                   style={{ fontFamily: "var(--font-display)" }}
