@@ -281,9 +281,9 @@ const Index = () => {
           </div>
           <div className="flex flex-col sm:flex-row gap-8 justify-center max-w-3xl mx-auto">
             {[
-              { name: "MUDr. Filip Berger", role: "Gynekolog a porodník" },
-              { name: "MUDr. Barbora Končická", role: "Gynekolog a porodník" },
-              { name: "Ivana Sakařová", role: "Zdravotní sestra" },
+              { name: "MUDr. Filip Berger", role: "Gynekolog" },
+              { name: "MUDr. Barbora Končická", role: "Gynekolog" },
+              { name: "Ivana", lastName: "Sakařová", role: "Zdravotní sestra" },
             ].map((p) => (
               <div
                 key={p.name}
@@ -296,7 +296,7 @@ const Index = () => {
                   className="text-xl font-semibold mb-1"
                   style={{ fontFamily: "var(--font-display)" }}
                 >
-                  {p.name}
+                  {p.name}{(p as any).lastName ? <><br />{(p as any).lastName}</> : null}
                 </h3>
                 <p className="text-primary text-sm font-medium">{p.role}</p>
               </div>
