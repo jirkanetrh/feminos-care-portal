@@ -72,8 +72,8 @@ const Index = () => {
             {[
               { label: "Naše služby", id: "sluzby" },
               { label: "Náš tým", id: "tym" },
-              { label: "Objednat se", id: "online" },
-              { label: "Chci recept", id: "online" },
+              { label: "Objednat se", id: "online-sluzby" },
+              { label: "Chci recept", id: "online-sluzby" },
               { label: "Kontakt", id: "kontakt" },
             ].map((item) => (
               <button
