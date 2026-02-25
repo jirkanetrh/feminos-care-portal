@@ -151,36 +151,41 @@ const Index = () => {
             </p>
           </div>
 
-          {/* Info rows */}
-          <div className="flex flex-col gap-4 mb-12 max-w-3xl mx-auto">
-            <div className="flex items-center gap-3">
-              <User className="w-5 h-5 text-primary shrink-0" />
-              <p className="text-muted-foreground text-[15px]">
-                Po přihlášení můžete využívat <strong className="text-foreground">všechny on-line služby</strong>. Podmínkou je mít u nás registrovaný kontaktní e-mail.
+          {/* Two boxes */}
+          <div id="online" className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            {/* Registered patients */}
+            <div className="bg-white rounded-2xl border border-[hsl(var(--border))] p-8 flex flex-col items-center text-center gap-4">
+              <div className="w-12 h-12 rounded-full bg-[hsl(var(--secondary))] flex items-center justify-center">
+                <User className="w-6 h-6 text-primary" strokeWidth={1.5} />
+              </div>
+              <h3 className="text-lg font-semibold" style={{ fontFamily: "var(--font-display)" }}>
+                Registrované pacientky
+              </h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                Po přihlášení můžete využívat všechny on-line služby – objednání, recepty i dotazy. Podmínkou je mít u nás registrovaný kontaktní e-mail.
               </p>
+              <button className="btn-primary flex items-center gap-2 mt-auto">
+                <Calendar className="w-4 h-4" />
+                Přihlásit se
+              </button>
             </div>
-            <div className="flex items-center gap-3">
-              <Clock className="w-5 h-5 text-primary shrink-0" />
-              <p className="text-muted-foreground text-[15px]">
-                On-line lze využít pouze funkci <strong className="text-foreground">objednávání</strong>.
-              </p>
-            </div>
-          </div>
 
-          {/* Action buttons */}
-          <div id="online" className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="btn-primary flex items-center gap-2 w-full sm:w-auto justify-center">
-              <Calendar className="w-4 h-4" />
-              Objednat na vyšetření
-            </button>
-            <button className="btn-primary flex items-center gap-2 w-full sm:w-auto justify-center">
-              <FileText className="w-4 h-4" />
-              Vystavit recept
-            </button>
-            <button className="btn-primary flex items-center gap-2 w-full sm:w-auto justify-center">
-              <MessageCircle className="w-4 h-4" />
-              Jiné
-            </button>
+            {/* New patients */}
+            <div className="bg-white rounded-2xl border border-[hsl(var(--border))] p-8 flex flex-col items-center text-center gap-4">
+              <div className="w-12 h-12 rounded-full bg-[hsl(var(--secondary))] flex items-center justify-center">
+                <Heart className="w-6 h-6 text-primary" strokeWidth={1.5} />
+              </div>
+              <h3 className="text-lg font-semibold" style={{ fontFamily: "var(--font-display)" }}>
+                Nové pacientky
+              </h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                Chcete se k nám zaregistrovat? On-line lze využít funkci objednávání bez nutnosti přihlášení.
+              </p>
+              <button className="btn-primary flex items-center gap-2 mt-auto">
+                <FileText className="w-4 h-4" />
+                Objednat se
+              </button>
+            </div>
           </div>
         </div>
       </section>
