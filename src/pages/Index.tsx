@@ -58,15 +58,10 @@ const Index = () => {
       </div>
 
       {/* LOGO + NAVIGATION */}
-      <header className="bg-white border-b border-[hsl(var(--border))] sticky top-0 z-50 shadow-sm">
+      <header className="bg-[hsl(var(--blue-light))] border-b border-[hsl(var(--border))] sticky top-0 z-50 shadow-sm">
         <div className="max-w-6xl mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="shrink-0">
-              <circle cx="20" cy="15" r="11" stroke="hsl(var(--primary))" strokeWidth="2.2" fill="none" />
-              <line x1="20" y1="26" x2="20" y2="38" stroke="hsl(var(--primary))" strokeWidth="2.2" />
-              <line x1="14" y1="33" x2="26" y2="33" stroke="hsl(var(--primary))" strokeWidth="2.2" />
-            </svg>
             <span
               className="text-3xl font-bold tracking-wide text-primary"
               style={{ fontFamily: "var(--font-display)" }}
@@ -409,11 +404,6 @@ const Index = () => {
       <footer className="bg-[hsl(var(--topbar))] text-[hsl(var(--topbar-foreground))]">
         <div className="max-w-6xl mx-auto px-4 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
           <div className="flex items-center gap-2">
-            <svg width="20" height="20" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="20" cy="15" r="11" stroke="currentColor" strokeWidth="2.5" fill="none" />
-              <line x1="20" y1="26" x2="20" y2="38" stroke="currentColor" strokeWidth="2.5" />
-              <line x1="14" y1="33" x2="26" y2="33" stroke="currentColor" strokeWidth="2.5" />
-            </svg>
             <span className="font-semibold tracking-wide text-sm" style={{ fontFamily: "var(--font-display)" }}>
               Feminos
             </span>
