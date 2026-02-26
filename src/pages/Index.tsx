@@ -48,6 +48,9 @@ const Index = () => {
             >
               Feminos
             </span>
+            <span className="text-base font-medium text-muted-foreground">
+              MUDr. Filip Berger
+            </span>
           </div>
 
           {/* Nav */}
