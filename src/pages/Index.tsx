@@ -59,8 +59,6 @@ const Index = () => {
             {[
               { label: "Poskytované služby", id: "sluzby" },
               { label: "Náš tým", id: "tym" },
-              { label: "Objednat se", id: "online-sluzby" },
-              { label: "Chci recept", id: "online-sluzby" },
               { label: "Kontakt", id: "kontakt" },
             ].map((item) => (
               <button
@@ -71,6 +69,12 @@ const Index = () => {
                 {item.label}
               </button>
             ))}
+            <button
+              onClick={() => scrollTo("online-sluzby")}
+              className="btn-primary text-sm px-5 py-2"
+            >
+              Objednání &amp; recepty
+            </button>
           </nav>
         </div>
       </header>
