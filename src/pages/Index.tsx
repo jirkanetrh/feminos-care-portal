@@ -261,9 +261,9 @@ const Index = () => {
           </div>
           <div className="flex flex-col sm:flex-row gap-8 justify-center max-w-3xl mx-auto">
             {[
-              { name: "MUDr. Filip Berger", role: "Gynekolog" },
-              { name: "MUDr. Barbora Končická", role: "Gynekolog" },
-              { name: "Ivana", lastName: "Sakařová", role: "Zdravotní sestra" },
+              { name: "MUDr. Filip Berger", role: "Lékař" },
+              { name: "MUDr. Barbora Končická", role: "Lékař" },
+              { name: "Ivana", lastName: "Sakařová", role: "Porodní asistentka" },
             ].map((p) => (
               <div
                 key={p.name}
