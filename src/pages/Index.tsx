@@ -48,7 +48,8 @@ const Index = () => {
             >
               Feminos
             </span>
-            <span className="text-base font-medium text-muted-foreground">
+            <span className="h-5 w-px bg-primary/30" />
+            <span className="text-base font-medium text-primary">
               MUDr. Filip Berger
             </span>
           </div>
