@@ -113,21 +113,6 @@ const Index = () => {
                 </p>
               </div>
 
-              {/* Right: CTA card */}
-              <div className="flex flex-col gap-3 shrink-0 md:mb-1">
-                <button
-                  onClick={() => scrollTo("online")}
-                  className="btn-primary text-sm px-8"
-                >
-                  Objednat se
-                </button>
-                <button
-                  onClick={() => scrollTo("sluzby")}
-                  className="btn-outline border-white/50 text-white hover:bg-white/10 text-sm px-8"
-                >
-                  Chci recept
-                </button>
-              </div>
             </div>
           </div>
         </div>
