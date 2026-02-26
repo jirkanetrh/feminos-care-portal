@@ -53,7 +53,7 @@ const Index = () => {
           {/* Nav */}
           <nav className="flex items-center gap-1 sm:gap-6 flex-wrap justify-center">
             {[
-              { label: "Naše služby", id: "sluzby" },
+              { label: "Poskytované služby", id: "sluzby" },
               { label: "Náš tým", id: "tym" },
               { label: "Objednat se", id: "online-sluzby" },
               { label: "Chci recept", id: "online-sluzby" },
@@ -197,7 +197,7 @@ const Index = () => {
             <p className="text-primary text-sm font-medium tracking-widest uppercase mb-2">
               Co nabízíme
             </p>
-            <h2 className="section-title">Naše služby</h2>
+            <h2 className="section-title">Poskytované služby</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
