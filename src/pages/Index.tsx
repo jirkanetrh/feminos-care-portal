@@ -330,10 +330,10 @@ const Index = () => {
                     <div>
                       <p className="font-medium text-foreground">E-mail</p>
                       <a
-                        href="mailto:feminos@email.cz"
+                        href="mailto:sestra.feminos@email.cz"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        feminos@email.cz
+                        sestra.feminos@email.cz
                       </a>
                     </div>
                   </div>
