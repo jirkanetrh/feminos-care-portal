@@ -371,7 +371,7 @@ const Index = () => {
                   className="btn-primary flex items-center gap-2 mt-4 self-start"
                 >
                   <Calendar className="w-4 h-4" />
-                  Objednat se
+                  Objednat se on-line
                 </button>
               </div>
             </div>
