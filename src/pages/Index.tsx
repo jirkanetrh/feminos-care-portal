@@ -366,6 +366,13 @@ const Index = () => {
                     </div>
                   ))}
                 </div>
+                <button
+                  onClick={() => scrollTo("online-sluzby")}
+                  className="btn-primary flex items-center gap-2 mt-4 self-start"
+                >
+                  <Calendar className="w-4 h-4" />
+                  Objednat se
+                </button>
               </div>
             </div>
 
