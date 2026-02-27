@@ -250,7 +250,7 @@ const Index = () => {
             {[
               { name: "MUDr. Filip Berger", role: "Lékař" },
               { name: "MUDr. Barbora Končická", role: "Lékař" },
-              { name: "Ivana", lastName: "Sakařová", role: "Porodní asistentka" },
+              { name: "Ivana", lastName: "Sakařová", role: "Porodní asistentka, laktační poradkyně" },
             ].map((p) => (
               <div
                 key={p.name}
