@@ -30,12 +30,6 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background font-body">
-      {/* TOP BAR */}
-      <div className="bg-[hsl(30_80%_92%)] text-[hsl(30_60%_30%)]">
-        <div className="max-w-6xl mx-auto px-4 py-2.5 text-center text-xs font-semibold tracking-wide">
-          Dovolená tento týden
-        </div>
-      </div>
 
       {/* LOGO + NAVIGATION */}
       <header className="bg-[hsl(var(--blue-light))] border-b border-[hsl(var(--border))] sticky top-0 z-50 shadow-sm">
