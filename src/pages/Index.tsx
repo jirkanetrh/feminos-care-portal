@@ -205,13 +205,8 @@ const Index = () => {
               },
               {
                 icon: <Pill className="w-7 h-7 text-foreground/70" strokeWidth={1.5} />,
-                title: "Antikoncepce",
-                desc: "Poradenství a předpis všech druhů antikoncepce.",
-              },
-              {
-                icon: <Dna className="w-7 h-7 text-foreground/70" strokeWidth={1.5} />,
-                title: "Hormonální léčba",
-                desc: "Terapie menopauzy a hormonálních poruch.",
+                title: "Antikoncepce a hormonální léčba",
+                desc: "Poradenství a předpis všech druhů antikoncepce, terapie menopauzy a hormonálních poruch.",
               },
               {
                 icon: <ClipboardList className="w-7 h-7 text-foreground/70" strokeWidth={1.5} />,
