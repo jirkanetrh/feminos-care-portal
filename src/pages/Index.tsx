@@ -206,6 +206,7 @@ const Index = () => {
                 icon: <Heart className="w-7 h-7 text-foreground/70" strokeWidth={1.5} />,
                 title: "Laktační poradenství",
                 desc: "Podpora a poradenství při kojení a laktaci.",
+                link: { label: "Webové stránky laktační poradkyně: www.silaintuice.cz", url: "https://www.silaintuice.cz" },
               },
               {
                 icon: <ClipboardList className="w-7 h-7 text-foreground/70" strokeWidth={1.5} />,
@@ -225,6 +226,16 @@ const Index = () => {
                   {s.title}
                 </h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{s.desc}</p>
+                {(s as any).link && (
+                  <a
+                    href={(s as any).link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary text-sm hover:underline mt-2 inline-block"
+                  >
+                    {(s as any).link.label}
+                  </a>
+                )}
               </div>
             ))}
           </div>
