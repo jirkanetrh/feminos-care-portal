@@ -145,9 +145,6 @@ const Index = () => {
               <div className="w-12 h-12 rounded-full bg-[hsl(var(--secondary))] flex items-center justify-center">
                 <User className="w-6 h-6 text-primary" strokeWidth={1.5} />
               </div>
-              <h3 className="text-lg font-semibold" style={{ fontFamily: "var(--font-display)" }}>
-                Registrované pacientky
-              </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 Po přihlášení můžete využívat všechny on-line služby – objednání, recepty i dotazy. Podmínkou je mít u nás registrovaný kontaktní e-mail.
               </p>
@@ -162,9 +159,6 @@ const Index = () => {
               <div className="w-12 h-12 rounded-full bg-[hsl(var(--secondary))] flex items-center justify-center">
                 <Heart className="w-6 h-6 text-primary" strokeWidth={1.5} />
               </div>
-              <h3 className="text-lg font-semibold" style={{ fontFamily: "var(--font-display)" }}>
-                Nové pacientky
-              </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 Chcete se k nám zaregistrovat? On-line lze využít funkci objednávání bez nutnosti přihlášení.
               </p>
