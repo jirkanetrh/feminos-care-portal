@@ -315,12 +315,24 @@ const Index = () => {
                   <div className="flex items-start gap-3">
                     <Mail className="w-4 h-4 text-primary mt-0.5 shrink-0" />
                     <div>
-                      <p className="font-medium text-foreground">E-mail</p>
+                      <p className="font-medium text-foreground">E-mail pro pacientky</p>
                       <a
                         href="mailto:sestra.feminos@email.cz"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
                         sestra.feminos@email.cz
+                      </a>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Mail className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+                    <div>
+                      <p className="font-medium text-foreground">E-mail pro firmy</p>
+                      <a
+                        href="mailto:feminos@email.cz"
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        feminos@email.cz
                       </a>
                     </div>
                   </div>
