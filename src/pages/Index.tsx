@@ -209,7 +209,7 @@ const Index = () => {
                 desc: "Poradenství a předpis vhodných druhů antikoncepce, terapie menopauzy a hormonálních poruch.",
               },
               {
-                icon: <Baby className="w-7 h-7 text-foreground/70" strokeWidth={1.5} />,
+                icon: <Heart className="w-7 h-7 text-foreground/70" strokeWidth={1.5} />,
                 title: "Laktační poradenství",
                 desc: "Podpora a poradenství při kojení a laktaci.",
               },
