@@ -401,12 +401,10 @@ const Index = () => {
 
       {/* FOOTER */}
       <footer className="bg-[hsl(var(--topbar))] text-[hsl(var(--topbar-foreground))]">
-        <div className="max-w-6xl mx-auto px-4 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
-          <div className="flex items-center gap-2">
-            <span className="font-semibold tracking-wide text-sm" style={{ fontFamily: "var(--font-display)" }}>
-              Feminos
-            </span>
-          </div>
+        <div className="max-w-6xl mx-auto px-4 py-6 text-center text-xs">
+          <p className="font-semibold tracking-wide text-sm mb-1" style={{ fontFamily: "var(--font-display)" }}>
+            Feminos, ambulantní gynekologická péče Ostrov
+          </p>
           <p className="text-white/70">
             © {new Date().getFullYear()} Feminos – Gynekologická ambulance. Všechna práva vyhrazena.
           </p>
