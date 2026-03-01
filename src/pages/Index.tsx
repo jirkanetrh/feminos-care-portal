@@ -147,7 +147,7 @@ const Index = () => {
               </div>
               <h3 className="text-base font-semibold text-foreground leading-snug" style={{ fontFamily: "var(--font-display)" }}>
                 Naše pacientky,<br />
-                <span className="font-normal text-sm text-muted-foreground">které mají v ordinaci již registrovaný e-mail.</span>
+                <span className="font-normal text-[15px] text-muted-foreground">které mají v ordinaci již registrovaný e-mail.</span>
               </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 Po přihlášení můžete využívat všechny on-line služby – objednání, recepty i dotazy.
@@ -165,7 +165,7 @@ const Index = () => {
               </div>
               <h3 className="text-base font-semibold text-foreground leading-snug" style={{ fontFamily: "var(--font-display)" }}>
                 Naše pacientky,<br />
-                <span className="font-normal text-sm text-muted-foreground">které doposud nemají registrovanou e-mailovou adresu.</span>
+                <span className="font-normal text-[15px] text-muted-foreground">které doposud nemají registrovanou e-mailovou adresu.</span>
               </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 Využijte on-line objednání bez nutnosti přihlášení a vyberte si vhodný volný termín.
