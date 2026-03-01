@@ -169,6 +169,12 @@ const Index = () => {
             </div>
           </div>
 
+          {/* Booking notes */}
+          <div className="max-w-3xl mx-auto mt-8 space-y-2 text-sm italic text-muted-foreground px-2">
+            <p>• Prosíme o dodržení definovaných typů vyšetření uvedených v objednávkovém formuláři.</p>
+            <p>• V poli <span className="font-medium">Důvod návštěvy</span> prosím případně upřesněte své obtíže.</p>
+          </div>
+
           {/* Note for unregistered patients */}
           <div className="max-w-3xl mx-auto mt-8 text-center bg-white rounded-2xl border border-[hsl(var(--border))] px-6 py-5">
             <p className="text-foreground text-sm font-medium leading-relaxed">
