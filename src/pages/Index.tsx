@@ -177,7 +177,7 @@ const Index = () => {
 
           {/* Note for unregistered patients */}
           <div className="max-w-3xl mx-auto mt-8 text-center bg-white rounded-2xl border border-[hsl(var(--border))] px-6 py-5">
-            <p className="text-foreground text-sm font-medium leading-relaxed">
+            <p className="text-foreground text-base font-medium leading-relaxed">
               U nás neregistrované pacientky prosíme, aby se na objednání domlouvaly telefonicky.
             </p>
             <p className="text-primary font-semibold mt-1">
