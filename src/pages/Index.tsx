@@ -168,6 +168,17 @@ const Index = () => {
               </button>
             </div>
           </div>
+
+          {/* Note for unregistered patients */}
+          <div className="max-w-3xl mx-auto mt-8 text-center bg-white rounded-2xl border border-[hsl(var(--border))] px-6 py-5">
+            <p className="text-foreground text-sm font-medium leading-relaxed">
+              U nás neregistrované pacientky prosíme, aby se na objednání domlouvaly telefonicky.
+            </p>
+            <p className="text-primary font-semibold mt-1">
+              <Phone className="w-4 h-4 inline-block mr-1.5 -mt-0.5" />
+              <a href="tel:+420353821512" className="hover:underline">353 821 512</a>
+            </p>
+          </div>
         </div>
       </section>
 
