@@ -145,8 +145,12 @@ const Index = () => {
               <div className="w-12 h-12 rounded-full bg-[hsl(var(--secondary))] flex items-center justify-center">
                 <User className="w-6 h-6 text-primary" strokeWidth={1.5} />
               </div>
+              <h3 className="text-base font-semibold text-foreground leading-snug" style={{ fontFamily: "var(--font-display)" }}>
+                Naše pacientky,<br />
+                <span className="font-normal text-sm text-muted-foreground">které mají v ordinaci již registrovaný e-mail.</span>
+              </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Po přihlášení můžete využívat všechny on-line služby – objednání, recepty i dotazy. Podmínkou je mít u nás registrovaný kontaktní e-mail.
+                Po přihlášení můžete využívat všechny on-line služby – objednání, recepty i dotazy.
               </p>
               <button className="btn-primary flex items-center gap-2 mt-auto">
                 <Calendar className="w-4 h-4" />
@@ -159,8 +163,12 @@ const Index = () => {
               <div className="w-12 h-12 rounded-full bg-[hsl(var(--secondary))] flex items-center justify-center">
                 <Heart className="w-6 h-6 text-primary" strokeWidth={1.5} />
               </div>
+              <h3 className="text-base font-semibold text-foreground leading-snug" style={{ fontFamily: "var(--font-display)" }}>
+                Naše pacientky,<br />
+                <span className="font-normal text-sm text-muted-foreground">které doposud nemají registrovanou e-mailovou adresu.</span>
+              </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Chcete se k nám zaregistrovat? On-line lze využít funkci objednávání bez nutnosti přihlášení.
+                Využijte on-line objednání bez nutnosti přihlášení a vyberte si vhodný volný termín.
               </p>
               <button className="btn-primary flex items-center gap-2 mt-auto">
                 <FileText className="w-4 h-4" />
