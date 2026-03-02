@@ -1,4 +1,5 @@
 import heroClinic from "@/assets/feminos.jpg";
+import heroMobile from "@/assets/hero-mobile.png";
 import {
   Phone,
   Mail,
@@ -79,7 +80,12 @@ const Index = () => {
         <img
           src={heroClinic}
           alt="Gynekologická ambulance Feminos"
-          className="absolute inset-0 w-full h-full object-cover object-center"
+          className="absolute inset-0 w-full h-full object-cover object-center hidden md:block"
+        />
+        <img
+          src={heroMobile}
+          alt="Gynekologická ambulance Feminos"
+          className="absolute inset-0 w-full h-full object-cover object-center md:hidden"
         />
         {/* gradient overlay – left dark fade */}
         <div className="absolute inset-0 bg-gradient-to-t from-[hsl(215_45%_8%/0.65)] via-[hsl(215_45%_8%/0.25)] to-transparent" />
