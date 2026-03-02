@@ -85,6 +85,19 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-[hsl(215_45%_8%/0.65)] via-[hsl(215_45%_8%/0.25)] to-transparent" />
         <div className="relative z-10 h-full flex flex-col justify-end pb-14">
           <div className="max-w-6xl mx-auto px-6 w-full">
+            {/* Announcement banner – set active=true to show */}
+            {(() => {
+              const active = true;
+              const message = "Vážené pacientky, v době od 12.2. do 18.2. čerpáme dovolenou. Děkujeme za pochopení.";
+              if (!active) return null;
+              return (
+                <div className="mb-6 rounded-lg border-2 border-amber-400 bg-amber-500/90 backdrop-blur-sm px-5 py-3 shadow-lg">
+                  <p className="text-white text-sm md:text-[15px] font-medium leading-relaxed">
+                    {message}
+                  </p>
+                </div>
+              );
+            })()}
             {/* Bottom-anchored modern layout */}
             <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
               {/* Left: headline block */}
