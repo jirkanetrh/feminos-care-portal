@@ -91,7 +91,7 @@ const Index = () => {
               const message = "Vážené pacientky, v době od 12.2. do 18.2. čerpáme dovolenou. Děkujeme za pochopení.";
               if (!active) return null;
               return (
-                <div className="mb-6 rounded-lg border-2 border-amber-400 bg-amber-500/90 backdrop-blur-sm px-5 py-3 shadow-lg">
+                <div className="mb-6 rounded-lg bg-amber-500/90 backdrop-blur-sm px-5 py-3 shadow-lg">
                   <p className="text-white text-sm md:text-[15px] font-medium leading-relaxed">
                     {message}
                   </p>
