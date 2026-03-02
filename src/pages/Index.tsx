@@ -110,14 +110,6 @@ const Index = () => {
             </div>
           </div>
         </div>
-        {/* scroll indicator */}
-        <button
-          onClick={() => scrollTo("online-sluzby")}
-          className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/60 animate-bounce"
-          aria-label="Scrollovat dolů"
-        >
-          <ChevronDown className="w-7 h-7" />
-        </button>
       </section>
 
 
